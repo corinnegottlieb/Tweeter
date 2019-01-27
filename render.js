@@ -2,7 +2,7 @@ const Renderer = () => {
     const renderComments = comments => {
         let allCommentsHTML = ""
             for (let comment of comments) {
-                let $comment = `<div data-id = ${comment.id}> <span class="delete-comment">x</span>${comment.text}</div>`
+                let $comment = `<div data-id = ${comment.id}> <span class="delete-comment">x </span>${comment.text}</div>`
                 allCommentsHTML += $comment
             } return allCommentsHTML
         } 
@@ -40,4 +40,3 @@ const Renderer = () => {
 }
 
 
-// const renderer = Renderer()
